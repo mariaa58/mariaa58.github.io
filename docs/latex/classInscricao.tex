@@ -1,0 +1,109 @@
+\doxysection{Inscricao Class Reference}
+\hypertarget{classInscricao}{}\label{classInscricao}\index{Inscricao@{Inscricao}}
+
+
+Classe \doxylink{classInscricao}{Inscricao}\+: representa uma inscrição de um aluno em um compromisso. Asoocia aluno e compromisso, permitindo a inscrição e o cancelamento. Para cada inscrição, tem um objeto que liga o aluno ao compromisso selecionado. Essa configuração facilita a acição de outras funcionalidades no futuro.  
+
+
+
+
+{\ttfamily \#include $<$inscricao.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInscricao_a3bcf4987fada872c20ae3d9441bff172}{Inscricao}} (\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno, \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*}compromisso)
+\begin{DoxyCompactList}\small\item\em Construtor da inscrição. Inicializa a inscrição com o aluno e o compromisso associados. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInscricao_a1a51ddd3959879dc88f7ca2a1d6b9868}{efetuar}} ()
+\begin{DoxyCompactList}\small\item\em Realiza a inscrição do aluno no compromisso. Reduz em 1 unidade o número de vagas do compromisso, caso ainda exista alguma disponível. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInscricao_aae12bb7a880ffa53cac26e93eccf1a00}{cancelar}} ()
+\begin{DoxyCompactList}\small\item\em Cancela a inscrição do aluno no compromisso. Libera uma vaga no compromisso e remove os dados do aluno da inscrição. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInscricao_acbafe60290969d6c3c1c3639e40bfaca}{get\+Compromisso}} () const
+\begin{DoxyCompactList}\small\item\em Retorna um ponteiro para o compromisso da inscrição. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInscricao_a5ebda02e4a797965e7a9841e8206829d}{get\+Aluno}} () const
+\begin{DoxyCompactList}\small\item\em Retorna um ponteiro para o aluno da inscrição. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{classInscricao}{Inscricao}\+: representa uma inscrição de um aluno em um compromisso. Asoocia aluno e compromisso, permitindo a inscrição e o cancelamento. Para cada inscrição, tem um objeto que liga o aluno ao compromisso selecionado. Essa configuração facilita a acição de outras funcionalidades no futuro. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classInscricao_a3bcf4987fada872c20ae3d9441bff172}\label{classInscricao_a3bcf4987fada872c20ae3d9441bff172} 
+\index{Inscricao@{Inscricao}!Inscricao@{Inscricao}}
+\index{Inscricao@{Inscricao}!Inscricao@{Inscricao}}
+\doxysubsubsection{\texorpdfstring{Inscricao()}{Inscricao()}}
+{\footnotesize\ttfamily Inscricao\+::\+Inscricao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno,  }\item[{\mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*}}]{compromisso }\end{DoxyParamCaption})}
+
+
+
+Construtor da inscrição. Inicializa a inscrição com o aluno e o compromisso associados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno. \\
+\hline
+{\em compromisso} & Ponteiro para o compromisso. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classInscricao_aae12bb7a880ffa53cac26e93eccf1a00}\label{classInscricao_aae12bb7a880ffa53cac26e93eccf1a00} 
+\index{Inscricao@{Inscricao}!cancelar@{cancelar}}
+\index{cancelar@{cancelar}!Inscricao@{Inscricao}}
+\doxysubsubsection{\texorpdfstring{cancelar()}{cancelar()}}
+{\footnotesize\ttfamily bool Inscricao\+::cancelar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cancela a inscrição do aluno no compromisso. Libera uma vaga no compromisso e remove os dados do aluno da inscrição. 
+
+\begin{DoxyReturn}{Returns}
+true se o cancelamento foi bem-\/sucedido, false se não foi possível cancelar. 
+\end{DoxyReturn}
+\Hypertarget{classInscricao_a1a51ddd3959879dc88f7ca2a1d6b9868}\label{classInscricao_a1a51ddd3959879dc88f7ca2a1d6b9868} 
+\index{Inscricao@{Inscricao}!efetuar@{efetuar}}
+\index{efetuar@{efetuar}!Inscricao@{Inscricao}}
+\doxysubsubsection{\texorpdfstring{efetuar()}{efetuar()}}
+{\footnotesize\ttfamily bool Inscricao\+::efetuar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Realiza a inscrição do aluno no compromisso. Reduz em 1 unidade o número de vagas do compromisso, caso ainda exista alguma disponível. 
+
+\begin{DoxyReturn}{Returns}
+true se a inscrição foi realizada com sucesso, false se não havia vaga/erro. 
+\end{DoxyReturn}
+\Hypertarget{classInscricao_a5ebda02e4a797965e7a9841e8206829d}\label{classInscricao_a5ebda02e4a797965e7a9841e8206829d} 
+\index{Inscricao@{Inscricao}!getAluno@{getAluno}}
+\index{getAluno@{getAluno}!Inscricao@{Inscricao}}
+\doxysubsubsection{\texorpdfstring{getAluno()}{getAluno()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*} Inscricao\+::get\+Aluno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna um ponteiro para o aluno da inscrição. 
+
+\begin{DoxyReturn}{Returns}
+Ponteiro para \doxylink{classAluno}{Aluno}. 
+\end{DoxyReturn}
+\Hypertarget{classInscricao_acbafe60290969d6c3c1c3639e40bfaca}\label{classInscricao_acbafe60290969d6c3c1c3639e40bfaca} 
+\index{Inscricao@{Inscricao}!getCompromisso@{getCompromisso}}
+\index{getCompromisso@{getCompromisso}!Inscricao@{Inscricao}}
+\doxysubsubsection{\texorpdfstring{getCompromisso()}{getCompromisso()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} Inscricao\+::get\+Compromisso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna um ponteiro para o compromisso da inscrição. 
+
+\begin{DoxyReturn}{Returns}
+Ponteiro para \doxylink{classCompromisso}{Compromisso} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{inscricao_8hpp}{inscricao.\+hpp}}\item 
+src/\mbox{\hyperlink{inscricao_8cpp}{inscricao.\+cpp}}\end{DoxyCompactItemize}

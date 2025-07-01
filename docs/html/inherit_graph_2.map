@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classCompromisso.html" title="Classe Compromisso: classe base para todos os tipos de compromissos do sistema, representando qualque..." alt="" coords="5,31,117,56"/>
+<area shape="rect" id="Node000001" href="$classCarona.html" title="Classe Carona: herda de Compromisso, já que toda carona é um compromisso na agenda,..." alt="" coords="165,5,233,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="131,28,165,22,166,27,132,33"/>
+<area shape="rect" id="Node000002" href="$classEvento.html" title="Classe Evento: representa um evento específico, derivada da classe Compromisso. Armazena informações ..." alt="" coords="166,55,233,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="131,53,166,59,165,64,130,58"/>
+</map>

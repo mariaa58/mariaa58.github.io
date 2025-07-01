@@ -1,0 +1,83 @@
+\doxysection{Agenda Class Reference}
+\hypertarget{classAgenda}{}\label{classAgenda}\index{Agenda@{Agenda}}
+
+
+Classe \doxylink{classAgenda}{Agenda}\+: gerencia a agenda de compromissos do aluno. Responsável por listar, exibir e verificar os compromissos associados a um aluno no sistema.  
+
+
+
+
+{\ttfamily \#include $<$agenda.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classAgenda_ae811627cc68934a011d5dbb256394d00}{exibir\+Compromissos}} (const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno) const
+\begin{DoxyCompactList}\small\item\em Exibe todos os compromissos agendados do aluno. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classAgenda_aa17011ecebd90c6e94ba774c1522824d}{listar\+Compromissos}} (const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno) const
+\begin{DoxyCompactList}\small\item\em Retorna a lista de compromissos em que o aluno está inscrito, ordenada por data e horário. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAgenda_a212995ce8a9e3794975f958748c4f0c3}{esta\+Vazia}} (const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno) const
+\begin{DoxyCompactList}\small\item\em Verifica se a agenda do aluno está vazia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{classAgenda}{Agenda}\+: gerencia a agenda de compromissos do aluno. Responsável por listar, exibir e verificar os compromissos associados a um aluno no sistema. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAgenda_a212995ce8a9e3794975f958748c4f0c3}\label{classAgenda_a212995ce8a9e3794975f958748c4f0c3} 
+\index{Agenda@{Agenda}!estaVazia@{estaVazia}}
+\index{estaVazia@{estaVazia}!Agenda@{Agenda}}
+\doxysubsubsection{\texorpdfstring{estaVazia()}{estaVazia()}}
+{\footnotesize\ttfamily bool Agenda\+::esta\+Vazia (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno }\end{DoxyParamCaption}) const}
+
+
+
+Verifica se a agenda do aluno está vazia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno consultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o aluno não possui compromissos; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{classAgenda_ae811627cc68934a011d5dbb256394d00}\label{classAgenda_ae811627cc68934a011d5dbb256394d00} 
+\index{Agenda@{Agenda}!exibirCompromissos@{exibirCompromissos}}
+\index{exibirCompromissos@{exibirCompromissos}!Agenda@{Agenda}}
+\doxysubsubsection{\texorpdfstring{exibirCompromissos()}{exibirCompromissos()}}
+{\footnotesize\ttfamily void Agenda\+::exibir\+Compromissos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno }\end{DoxyParamCaption}) const}
+
+
+
+Exibe todos os compromissos agendados do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno cujos compromissos serão exibidos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAgenda_aa17011ecebd90c6e94ba774c1522824d}\label{classAgenda_aa17011ecebd90c6e94ba774c1522824d} 
+\index{Agenda@{Agenda}!listarCompromissos@{listarCompromissos}}
+\index{listarCompromissos@{listarCompromissos}!Agenda@{Agenda}}
+\doxysubsubsection{\texorpdfstring{listarCompromissos()}{listarCompromissos()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ Agenda\+::listar\+Compromissos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a lista de compromissos em que o aluno está inscrito, ordenada por data e horário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno a ser consultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vetor de ponteiros para compromissos do aluno. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{agenda_8hpp}{agenda.\+hpp}}\item 
+src/\mbox{\hyperlink{agenda_8cpp}{agenda.\+cpp}}\end{DoxyCompactItemize}

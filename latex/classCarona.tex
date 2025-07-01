@@ -1,0 +1,216 @@
+\doxysection{Carona Class Reference}
+\hypertarget{classCarona}{}\label{classCarona}\index{Carona@{Carona}}
+
+
+Classe \doxylink{classCarona}{Carona}\+: herda de \doxylink{classCompromisso}{Compromisso}, já que toda carona é um compromisso na agenda, porém possui informações adicionais específicas. Essa herança permite tratar caronas como compromissos em contextos onde não é necessário diferenciar, mas também acessar os detalhes específicos de uma carona quando necessário.  
+
+
+
+
+{\ttfamily \#include $<$carona.\+hpp$>$}
+
+
+
+Inheritance diagram for Carona\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classCarona__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Carona\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classCarona__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCarona_a6707894620a4119ecbde609f55dfae3f}{Carona}} (const std\+::string \&\mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}}, int \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}}, const std\+::string \&rota, const std\+::string \&motorista, const std\+::string \&contato\+Motorista)
+\begin{DoxyCompactList}\small\item\em Construtor da carona. Inicializa todos os campos da carona e passa os dados para o construtor da classe base \doxylink{classCompromisso}{Compromisso}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCarona_a95c903b3a8e299031088c2bf3b1fff24}{\texorpdfstring{$\sim$}{\string~}\+Carona}} ()=default
+\begin{DoxyCompactList}\small\item\em Destrutor virtual padrão da classe \doxylink{classCarona}{Carona}. Como herda de \doxylink{classCompromisso}{Compromisso}, garante que os recursos sejam liberados corretamente ao deletar um compromisso usando ponteiro para a classe base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCarona_af2e963eb565f293d4ca99e6d81598336}{exibir\+Detalhes}} () const override
+\begin{DoxyCompactList}\small\item\em Exibe os detalhes da carona. Implementa a interface de \doxylink{classCompromisso}{Compromisso} para exibir informações básicas e específicas da carona. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCarona_a1bc8a11e3fd20fc9eb6273fdb0da9c6e}{mostrar\+Descricao}} () const override
+\begin{DoxyCompactList}\small\item\em Exibe uma descrição detalhada da carona. Pode ser usada para mostrar informações completas em uma visualização expandida. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCarona_acb5210ee6e8ac45d562a0114152c75b4}{get\+Rota}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a rota da carona. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCarona_aa2628dccbdb409ea27d1d8fe667047bc}{get\+Motorista}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome do motorista. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCarona_a6ceeebd0572030b34afedbd3bf27a76a}{get\+Contato\+Motorista}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o contato do motorista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classCompromisso}{Compromisso}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCompromisso_a5246207c592240bcbb4efb5325979b61}{Compromisso}} (const std\+::string \&\mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}}, int \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}})
+\begin{DoxyCompactList}\small\item\em Construtor do compromisso. Inicializa os campos essenciais do compromisso. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCompromisso_a3c2dd2afbc1108cd499ab6805a251345}{\texorpdfstring{$\sim$}{\string~}\+Compromisso}} ()=default
+\begin{DoxyCompactList}\small\item\em Destrutor virtual\+: permte a destruição correta ao usar ponteiros para \doxylink{classCompromisso}{Compromisso}, evitando vazamento de memória quando houver herança. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_a4ebd1743490c9774e17e121ebe56be87}{get\+Titulo}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o título do compromisso. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_a82dd35664060d9f1d72f354717da6ba7}{get\+Local}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o local do compromisso. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_abda1ea7201a8d23fdc5225c603ee90f6}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Acessa a data do compromisso. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_a309646ee8caa72658eb86e95a3192ed7}{get\+Horario}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o horário do compromisso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCompromisso_a1e054c8fc0d150d6e78ad24d5323ef6b}{get\+Vagas}} () const
+\begin{DoxyCompactList}\small\item\em Informa o número de vagas restantes. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_aaf86c04237ac7db6990f6c2a49da15f0}{get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o status do compromisso. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCompromisso_aebbb05cc07606730bb9cb3d9c20b6d7f}{tem\+Vaga}} () const
+\begin{DoxyCompactList}\small\item\em Verifica se ainda há vagas disponíveis para realização da inscrição. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a4fc20d26293bc09ce0d900c8e19027be}{reduzir\+Vaga}} ()
+\begin{DoxyCompactList}\small\item\em Reduz o número de vagas disponíveis em 1. Usado ao realizar uma nova inscrição. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a8fc9a6323a9556ac021c2c2b80545a8b}{liberar\+Vaga}} ()
+\begin{DoxyCompactList}\small\item\em Libera uma vaga, aumentando o número de vagas em 1. Usado ao cancelar uma inscrição. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a6db2de1ce9fcd30e66cabb0f747f3674}{set\+Status}} (const std\+::string \&novo\+Status)
+\begin{DoxyCompactList}\small\item\em Altera o status do compromisso. Só aceita valores previamente definidos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a051afd9868d782503780f9dea7932bd7}{atualizar\+Dados}} (const std\+::string \&novo\+Local, const std\+::string \&nova\+Data, const std\+::string \&novo\+Horario, int novas\+Vagas, const std\+::string \&nova\+Descricao, const std\+::string \&novo\+Status)
+\begin{DoxyCompactList}\small\item\em Atualiza as informações principais do compromisso de uma só vez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classCompromisso}{Compromisso}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}}
+\begin{DoxyCompactList}\small\item\em Atributos básicos do compromisso. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}}
+\item 
+int \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a3f0e874f99ee127fc2e3304e56de0fcb}{descricao}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a4c23dee9c572a06d465a61770f59266c}{status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{classCarona}{Carona}\+: herda de \doxylink{classCompromisso}{Compromisso}, já que toda carona é um compromisso na agenda, porém possui informações adicionais específicas. Essa herança permite tratar caronas como compromissos em contextos onde não é necessário diferenciar, mas também acessar os detalhes específicos de uma carona quando necessário. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCarona_a6707894620a4119ecbde609f55dfae3f}\label{classCarona_a6707894620a4119ecbde609f55dfae3f} 
+\index{Carona@{Carona}!Carona@{Carona}}
+\index{Carona@{Carona}!Carona@{Carona}}
+\doxysubsubsection{\texorpdfstring{Carona()}{Carona()}}
+{\footnotesize\ttfamily Carona\+::\+Carona (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{titulo,  }\item[{const std\+::string \&}]{local,  }\item[{const std\+::string \&}]{data,  }\item[{const std\+::string \&}]{horario,  }\item[{int}]{vagas,  }\item[{const std\+::string \&}]{rota,  }\item[{const std\+::string \&}]{motorista,  }\item[{const std\+::string \&}]{contato\+Motorista }\end{DoxyParamCaption})}
+
+
+
+Construtor da carona. Inicializa todos os campos da carona e passa os dados para o construtor da classe base \doxylink{classCompromisso}{Compromisso}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & Título da carona. \\
+\hline
+{\em local} & Ponto de encontro. \\
+\hline
+{\em data} & Data da carona (AAAA-\/\+MM-\/\+DD). \\
+\hline
+{\em horario} & Horário da carona (HH\+:MM). \\
+\hline
+{\em vagas} & Quantidade de vagas disponíveis. \\
+\hline
+{\em rota} & Descrição resumida da rota. \\
+\hline
+{\em motorista} & Nome do motorista. \\
+\hline
+{\em contato\+Motorista} & Email ou telefone do motorista. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCarona_a95c903b3a8e299031088c2bf3b1fff24}\label{classCarona_a95c903b3a8e299031088c2bf3b1fff24} 
+\index{Carona@{Carona}!````~Carona@{\texorpdfstring{$\sim$}{\string~}Carona}}
+\index{````~Carona@{\texorpdfstring{$\sim$}{\string~}Carona}!Carona@{Carona}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Carona()}{\string~Carona()}}
+{\footnotesize\ttfamily virtual Carona\+::\texorpdfstring{$\sim$}{\string~}\+Carona (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destrutor virtual padrão da classe \doxylink{classCarona}{Carona}. Como herda de \doxylink{classCompromisso}{Compromisso}, garante que os recursos sejam liberados corretamente ao deletar um compromisso usando ponteiro para a classe base. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCarona_af2e963eb565f293d4ca99e6d81598336}\label{classCarona_af2e963eb565f293d4ca99e6d81598336} 
+\index{Carona@{Carona}!exibirDetalhes@{exibirDetalhes}}
+\index{exibirDetalhes@{exibirDetalhes}!Carona@{Carona}}
+\doxysubsubsection{\texorpdfstring{exibirDetalhes()}{exibirDetalhes()}}
+{\footnotesize\ttfamily void Carona\+::exibir\+Detalhes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Exibe os detalhes da carona. Implementa a interface de \doxylink{classCompromisso}{Compromisso} para exibir informações básicas e específicas da carona. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classCompromisso_a2da165f15d9eeed79c73bb85b4c32f4d}{Compromisso}}.
+
+\Hypertarget{classCarona_a6ceeebd0572030b34afedbd3bf27a76a}\label{classCarona_a6ceeebd0572030b34afedbd3bf27a76a} 
+\index{Carona@{Carona}!getContatoMotorista@{getContatoMotorista}}
+\index{getContatoMotorista@{getContatoMotorista}!Carona@{Carona}}
+\doxysubsubsection{\texorpdfstring{getContatoMotorista()}{getContatoMotorista()}}
+{\footnotesize\ttfamily const std\+::string \& Carona\+::get\+Contato\+Motorista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o contato do motorista. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para o contato do motorista. 
+\end{DoxyReturn}
+\Hypertarget{classCarona_aa2628dccbdb409ea27d1d8fe667047bc}\label{classCarona_aa2628dccbdb409ea27d1d8fe667047bc} 
+\index{Carona@{Carona}!getMotorista@{getMotorista}}
+\index{getMotorista@{getMotorista}!Carona@{Carona}}
+\doxysubsubsection{\texorpdfstring{getMotorista()}{getMotorista()}}
+{\footnotesize\ttfamily const std\+::string \& Carona\+::get\+Motorista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o nome do motorista. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para a string com o nome do motorista. 
+\end{DoxyReturn}
+\Hypertarget{classCarona_acb5210ee6e8ac45d562a0114152c75b4}\label{classCarona_acb5210ee6e8ac45d562a0114152c75b4} 
+\index{Carona@{Carona}!getRota@{getRota}}
+\index{getRota@{getRota}!Carona@{Carona}}
+\doxysubsubsection{\texorpdfstring{getRota()}{getRota()}}
+{\footnotesize\ttfamily const std\+::string \& Carona\+::get\+Rota (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna a rota da carona. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para a string com a rota 
+\end{DoxyReturn}
+\Hypertarget{classCarona_a1bc8a11e3fd20fc9eb6273fdb0da9c6e}\label{classCarona_a1bc8a11e3fd20fc9eb6273fdb0da9c6e} 
+\index{Carona@{Carona}!mostrarDescricao@{mostrarDescricao}}
+\index{mostrarDescricao@{mostrarDescricao}!Carona@{Carona}}
+\doxysubsubsection{\texorpdfstring{mostrarDescricao()}{mostrarDescricao()}}
+{\footnotesize\ttfamily void Carona\+::mostrar\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Exibe uma descrição detalhada da carona. Pode ser usada para mostrar informações completas em uma visualização expandida. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classCompromisso_ac6b16a57d2c8b340732c3d2b6f9bde05}{Compromisso}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{carona_8hpp}{carona.\+hpp}}\item 
+src/\mbox{\hyperlink{carona_8cpp}{carona.\+cpp}}\end{DoxyCompactItemize}

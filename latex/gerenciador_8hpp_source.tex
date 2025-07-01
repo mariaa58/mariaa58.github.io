@@ -1,0 +1,70 @@
+\doxysection{gerenciador.\+hpp}
+\hypertarget{gerenciador_8hpp_source}{}\label{gerenciador_8hpp_source}\index{include/gerenciador.hpp@{include/gerenciador.hpp}}
+\mbox{\hyperlink{gerenciador_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GERENCIADOR\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GERENCIADOR\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{aluno_8hpp}{aluno.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{compromisso_8hpp}{compromisso.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{evento_8hpp}{evento.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{carona_8hpp}{carona.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{filtro_8hpp}{filtro.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{agenda_8hpp}{agenda.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGerenciador}{Gerenciador}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classGerenciador_a1090d2691f443ab47e265b68ed5429cc}{Gerenciador}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classAluno}{Aluno}}\ *\mbox{\hyperlink{classGerenciador_a0587e3281721f74ca8d6809142dc1431}{login}}(\textcolor{keyword}{const}\ std::vector<Aluno\ *>\ \&alunos,\ \textcolor{keyword}{const}\ std::string\ \&matricula,\ \textcolor{keyword}{const}\ std::string\ \&senha)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_ab51a41be0bb7c47eced66dc55cf9512b}{exibirMenuPrincipal}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a63de18c2a32909ad30528421fb1f9baf}{processarMenuPrincipal}}(\textcolor{keywordtype}{int}\ opcao,\ \mbox{\hyperlink{classAluno}{Aluno}}\ *aluno,\ std::vector<Compromisso\ *>\ \&compromissos);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a56412ca03a5eae8d52f04c8d147b4f97}{menuAgenda}}(\mbox{\hyperlink{classAluno}{Aluno}}\ *aluno,\ std::vector<Compromisso\ *>\ \&compromissos);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_afe5f5776938bd13c71022e1f2f1a2dfd}{menuEventos}}(\mbox{\hyperlink{classAluno}{Aluno}}\ *aluno,\ std::vector<Compromisso\ *>\ \&compromissos);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_ad6b5bf80e9879891684f70d045175e60}{menuCaronas}}(\mbox{\hyperlink{classAluno}{Aluno}}\ *aluno,\ std::vector<Compromisso\ *>\ \&compromissos);}
+\DoxyCodeLine{00082\ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a71d4b5e225e99005dacf74091908b1e1}{menuPerfil}}(\mbox{\hyperlink{classAluno}{Aluno}}\ *aluno);}
+\DoxyCodeLine{00089\ \ \ \ \ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a885195baa5f17633a00d44c95f241ca8}{menuAdministracao}}(\mbox{\hyperlink{classAluno}{Aluno}}\ *aluno,\ std::vector<Compromisso\ *>\ \&compromissos);}
+\DoxyCodeLine{00098\ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a86e0b0bfdf1d2b755288431aa3eaec59}{exibirErro}}(\textcolor{keyword}{const}\ std::string\ \&mensagem)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a7ddafb520db9266f83245938f2b0d845}{listarFavoritos}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAluno}{Aluno}}\ *aluno)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ \ \ \ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a280f528422fbefd3367ab63f441bd974}{cadastrarEvento}}(std::vector<Compromisso\ *>\ \&compromissos)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00120\ \ \ \ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a436d5350cff57f93100a4074776e21bc}{cadastrarCarona}}(std::vector<Compromisso\ *>\ \&compromissos)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00128\ \ \ \ \ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGerenciador_a898350884a12bf20aadd636b77c5ac29}{excluirCompromisso}}(std::vector<Compromisso\ *>\ \&compromissos)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{comment}{//\ Métodos\ auxiliares\ usados\ internamente\ nos\ menus.}}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ listarEventos(\textcolor{keyword}{const}\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ fazerInscricaoEvento(\mbox{\hyperlink{classAluno}{Aluno}}*\ aluno,\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ cancelarInscricaoEvento(\mbox{\hyperlink{classAluno}{Aluno}}*\ aluno);}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ filtrarEventosPorCurso(\textcolor{keyword}{const}\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ filtrarEventosPorTipo(\textcolor{keyword}{const}\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ listarCaronas(\textcolor{keyword}{const}\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ fazerInscricaoCarona(\mbox{\hyperlink{classAluno}{Aluno}}*\ aluno,\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ cancelarInscricaoCarona(\mbox{\hyperlink{classAluno}{Aluno}}*\ aluno);}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ filtrarCaronasPorBairro(\textcolor{keyword}{const}\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ editarCompromisso(std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ excluirCompromissoProtegido(std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ verDescricaoCompromisso(\textcolor{keyword}{const}\ std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ alterarStatusCompromisso(std::vector<Compromisso*>\&\ compromissos);}
+\DoxyCodeLine{00154\ \};}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

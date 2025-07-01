@@ -1,0 +1,86 @@
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include "{}sistema.\+hpp"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_aeb93e25e95d089d3e1c79baf4a71b594}{print\+Banner}} ()
+\begin{DoxyCompactList}\small\item\em Exibe o banner inicial do sistema centralizado. É exibido toda vez que o sistema inicial, mostrando a data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a2124d507727a3abf4b8db2bfabc8f590}{print\+Encerramento}} ()
+\begin{DoxyCompactList}\small\item\em Exibe a mensagem de encerramento ao final do programa, sendo chamada ao terminar o sistema. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal, responsável por inicializar o sistema, imrpimir o banner inicial e chamar o menu principal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_a2ef96ce293dd7e51584ceda374557612}{COR\+\_\+\+BANNER}} = "{}\textbackslash{}033\mbox{[}1;34m"{}
+\begin{DoxyCompactList}\small\item\em Códigos de cor para o banner. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal, responsável por inicializar o sistema, imrpimir o banner inicial e chamar o menu principal. 
+
+\begin{DoxyReturn}{Returns}
+int Código de retorno da execução (0 para sucesso) 
+\end{DoxyReturn}
+Efeito visual\+: indica que o sistema está carregando.
+
+Instancia o sistema principal e entra no loop de interação.
+
+Tratamento de exceções padrão.
+
+Captura qualquer outra exceção.\Hypertarget{main_8cpp_aeb93e25e95d089d3e1c79baf4a71b594}\label{main_8cpp_aeb93e25e95d089d3e1c79baf4a71b594} 
+\index{main.cpp@{main.cpp}!printBanner@{printBanner}}
+\index{printBanner@{printBanner}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{printBanner()}{printBanner()}}
+{\footnotesize\ttfamily void print\+Banner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe o banner inicial do sistema centralizado. É exibido toda vez que o sistema inicial, mostrando a data. 
+
+\Hypertarget{main_8cpp_a2124d507727a3abf4b8db2bfabc8f590}\label{main_8cpp_a2124d507727a3abf4b8db2bfabc8f590} 
+\index{main.cpp@{main.cpp}!printEncerramento@{printEncerramento}}
+\index{printEncerramento@{printEncerramento}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{printEncerramento()}{printEncerramento()}}
+{\footnotesize\ttfamily void print\+Encerramento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe a mensagem de encerramento ao final do programa, sendo chamada ao terminar o sistema. 
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8cpp_a2ef96ce293dd7e51584ceda374557612}\label{main_8cpp_a2ef96ce293dd7e51584ceda374557612} 
+\index{main.cpp@{main.cpp}!COR\_BANNER@{COR\_BANNER}}
+\index{COR\_BANNER@{COR\_BANNER}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{COR\_BANNER}{COR\_BANNER}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} COR\+\_\+\+BANNER = "{}\textbackslash{}033\mbox{[}1;34m"{}}
+
+
+
+Códigos de cor para o banner. 
+

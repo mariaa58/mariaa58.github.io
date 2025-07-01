@@ -1,0 +1,276 @@
+\doxysection{Gerenciador Class Reference}
+\hypertarget{classGerenciador}{}\label{classGerenciador}\index{Gerenciador@{Gerenciador}}
+
+
+Classe \doxylink{classGerenciador}{Gerenciador}\+: responsável por gerencia a lógica, o funcionamento dos menus e o fluxo do sistema. Centraliza a navegação, a interação do usuário pelos menus e outras operações, como o login. Seguindo a lógica de modularização, a criação de uma classe específica para isso melhora a organização do código e facilita futuras manutenções. Essa classe não armazena nenhum dado, apenas manipula objetos já existentes (usando ponteiros, por exemplo), executando ações de acordo com as opções escolhidas pelo usuário.  
+
+
+
+
+{\ttfamily \#include $<$gerenciador.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGerenciador_a1090d2691f443ab47e265b68ed5429cc}{Gerenciador}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \doxylink{classGerenciador}{Gerenciador}. Como os métodos trabalham sobre objetos externos, não inicializa nada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGerenciador_a0587e3281721f74ca8d6809142dc1431}{login}} (const std\+::vector$<$ \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*} $>$ \&alunos, const std\+::string \&matricula, const std\+::string \&senha) const
+\begin{DoxyCompactList}\small\item\em Realiza o login de um aluno usando matrícula e senha definidos ao selecionar a opção de criar uma conta. Busca um aluno cujas informações de login correspondam às fornecidas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_ab51a41be0bb7c47eced66dc55cf9512b}{exibir\+Menu\+Principal}} () const
+\begin{DoxyCompactList}\small\item\em Exibe o menu principal de opções do sistema, mostrando as opções disponíveis após a realização do login. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a63de18c2a32909ad30528421fb1f9baf}{processar\+Menu\+Principal}} (int opcao, \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno, std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos)
+\begin{DoxyCompactList}\small\item\em Processa a opção escolhida no menu principal, chamando o método correspondente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a56412ca03a5eae8d52f04c8d147b4f97}{menu\+Agenda}} (\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno, std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos)
+\begin{DoxyCompactList}\small\item\em Exibe o menu de opções relacionadas à agenda do aluno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_afe5f5776938bd13c71022e1f2f1a2dfd}{menu\+Eventos}} (\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno, std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos)
+\begin{DoxyCompactList}\small\item\em Exibe o menu de opções relacionadas a eventos e caronas. Permite ao aluno interagir com eventos e caronas disponíveis no sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_ad6b5bf80e9879891684f70d045175e60}{menu\+Caronas}} (\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno, std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos)
+\begin{DoxyCompactList}\small\item\em Exibe o menu de operações com caronas, como inscrição, filtro, visualização. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a71d4b5e225e99005dacf74091908b1e1}{menu\+Perfil}} (\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno)
+\begin{DoxyCompactList}\small\item\em Exibe as informações do perfil do aluno logado e permite edições. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a885195baa5f17633a00d44c95f241ca8}{menu\+Administracao}} (\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno, std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos)
+\begin{DoxyCompactList}\small\item\em Exibe o menu de administração do sistema, que permite cadastrar, apagar, excluir compromissos, etc. Permite ao aluno acessar funcionalidades administrativas, como cadastro de eventos e caronas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a86e0b0bfdf1d2b755288431aa3eaec59}{exibir\+Erro}} (const std\+::string \&mensagem) const
+\begin{DoxyCompactList}\small\item\em Exibe uma mensagem de erro no terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a7ddafb520db9266f83245938f2b0d845}{listar\+Favoritos}} (const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}aluno) const
+\begin{DoxyCompactList}\small\item\em Lista os compromissos sinalizados como favoritos pelo aluno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a280f528422fbefd3367ab63f441bd974}{cadastrar\+Evento}} (std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos) const
+\begin{DoxyCompactList}\small\item\em Cadastra um novo evento. Solicita as informações do evento e o adiciona na lista de compromissos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a436d5350cff57f93100a4074776e21bc}{cadastrar\+Carona}} (std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos) const
+\begin{DoxyCompactList}\small\item\em Permite o cadastro de uma nova carona. Solicita as informações necessárias e insere a carona na lista de compromissos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGerenciador_a898350884a12bf20aadd636b77c5ac29}{excluir\+Compromisso}} (std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&compromissos) const
+\begin{DoxyCompactList}\small\item\em Exclui um compromisso. Solicita o título e apaga da lista, se for encontrado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{classGerenciador}{Gerenciador}\+: responsável por gerencia a lógica, o funcionamento dos menus e o fluxo do sistema. Centraliza a navegação, a interação do usuário pelos menus e outras operações, como o login. Seguindo a lógica de modularização, a criação de uma classe específica para isso melhora a organização do código e facilita futuras manutenções. Essa classe não armazena nenhum dado, apenas manipula objetos já existentes (usando ponteiros, por exemplo), executando ações de acordo com as opções escolhidas pelo usuário. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGerenciador_a1090d2691f443ab47e265b68ed5429cc}\label{classGerenciador_a1090d2691f443ab47e265b68ed5429cc} 
+\index{Gerenciador@{Gerenciador}!Gerenciador@{Gerenciador}}
+\index{Gerenciador@{Gerenciador}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{Gerenciador()}{Gerenciador()}}
+{\footnotesize\ttfamily Gerenciador\+::\+Gerenciador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão da classe \doxylink{classGerenciador}{Gerenciador}. Como os métodos trabalham sobre objetos externos, não inicializa nada. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGerenciador_a436d5350cff57f93100a4074776e21bc}\label{classGerenciador_a436d5350cff57f93100a4074776e21bc} 
+\index{Gerenciador@{Gerenciador}!cadastrarCarona@{cadastrarCarona}}
+\index{cadastrarCarona@{cadastrarCarona}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{cadastrarCarona()}{cadastrarCarona()}}
+{\footnotesize\ttfamily void Gerenciador\+::cadastrar\+Carona (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption}) const}
+
+
+
+Permite o cadastro de uma nova carona. Solicita as informações necessárias e insere a carona na lista de compromissos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em compromissos} & Lista de compromissos do sistema. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_a280f528422fbefd3367ab63f441bd974}\label{classGerenciador_a280f528422fbefd3367ab63f441bd974} 
+\index{Gerenciador@{Gerenciador}!cadastrarEvento@{cadastrarEvento}}
+\index{cadastrarEvento@{cadastrarEvento}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{cadastrarEvento()}{cadastrarEvento()}}
+{\footnotesize\ttfamily void Gerenciador\+::cadastrar\+Evento (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption}) const}
+
+
+
+Cadastra um novo evento. Solicita as informações do evento e o adiciona na lista de compromissos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em compromissos} & Lista de compromissos do sistema. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_a898350884a12bf20aadd636b77c5ac29}\label{classGerenciador_a898350884a12bf20aadd636b77c5ac29} 
+\index{Gerenciador@{Gerenciador}!excluirCompromisso@{excluirCompromisso}}
+\index{excluirCompromisso@{excluirCompromisso}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{excluirCompromisso()}{excluirCompromisso()}}
+{\footnotesize\ttfamily void Gerenciador\+::excluir\+Compromisso (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption}) const}
+
+
+
+Exclui um compromisso. Solicita o título e apaga da lista, se for encontrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em compromissos} & Lista de compromissos do sistema. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_a86e0b0bfdf1d2b755288431aa3eaec59}\label{classGerenciador_a86e0b0bfdf1d2b755288431aa3eaec59} 
+\index{Gerenciador@{Gerenciador}!exibirErro@{exibirErro}}
+\index{exibirErro@{exibirErro}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{exibirErro()}{exibirErro()}}
+{\footnotesize\ttfamily void Gerenciador\+::exibir\+Erro (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{mensagem }\end{DoxyParamCaption}) const}
+
+
+
+Exibe uma mensagem de erro no terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mensagem} & Texto do erro. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_ab51a41be0bb7c47eced66dc55cf9512b}\label{classGerenciador_ab51a41be0bb7c47eced66dc55cf9512b} 
+\index{Gerenciador@{Gerenciador}!exibirMenuPrincipal@{exibirMenuPrincipal}}
+\index{exibirMenuPrincipal@{exibirMenuPrincipal}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{exibirMenuPrincipal()}{exibirMenuPrincipal()}}
+{\footnotesize\ttfamily void Gerenciador\+::exibir\+Menu\+Principal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Exibe o menu principal de opções do sistema, mostrando as opções disponíveis após a realização do login. 
+
+\Hypertarget{classGerenciador_a7ddafb520db9266f83245938f2b0d845}\label{classGerenciador_a7ddafb520db9266f83245938f2b0d845} 
+\index{Gerenciador@{Gerenciador}!listarFavoritos@{listarFavoritos}}
+\index{listarFavoritos@{listarFavoritos}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{listarFavoritos()}{listarFavoritos()}}
+{\footnotesize\ttfamily void Gerenciador\+::listar\+Favoritos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno }\end{DoxyParamCaption}) const}
+
+
+
+Lista os compromissos sinalizados como favoritos pelo aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & \doxylink{classAluno}{Aluno} logado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_a0587e3281721f74ca8d6809142dc1431}\label{classGerenciador_a0587e3281721f74ca8d6809142dc1431} 
+\index{Gerenciador@{Gerenciador}!login@{login}}
+\index{login@{login}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*} Gerenciador\+::login (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*} $>$ \&}]{alunos,  }\item[{const std\+::string \&}]{matricula,  }\item[{const std\+::string \&}]{senha }\end{DoxyParamCaption}) const}
+
+
+
+Realiza o login de um aluno usando matrícula e senha definidos ao selecionar a opção de criar uma conta. Busca um aluno cujas informações de login correspondam às fornecidas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alunos} & Vetor de ponteiros para alunos cadastrados. \\
+\hline
+{\em matricula} & Matrícula informada pelo usuário. \\
+\hline
+{\em senha} & Senha informada no login. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o aluno autenticado, ou nullptr se nada for encontrado. 
+\end{DoxyReturn}
+\Hypertarget{classGerenciador_a885195baa5f17633a00d44c95f241ca8}\label{classGerenciador_a885195baa5f17633a00d44c95f241ca8} 
+\index{Gerenciador@{Gerenciador}!menuAdministracao@{menuAdministracao}}
+\index{menuAdministracao@{menuAdministracao}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{menuAdministracao()}{menuAdministracao()}}
+{\footnotesize\ttfamily void Gerenciador\+::menu\+Administracao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption})}
+
+
+
+Exibe o menu de administração do sistema, que permite cadastrar, apagar, excluir compromissos, etc. Permite ao aluno acessar funcionalidades administrativas, como cadastro de eventos e caronas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno logado. \\
+\hline
+{\em compromissos} & Vetor de ponteiros para compromissos do sistema. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_a56412ca03a5eae8d52f04c8d147b4f97}\label{classGerenciador_a56412ca03a5eae8d52f04c8d147b4f97} 
+\index{Gerenciador@{Gerenciador}!menuAgenda@{menuAgenda}}
+\index{menuAgenda@{menuAgenda}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{menuAgenda()}{menuAgenda()}}
+{\footnotesize\ttfamily void Gerenciador\+::menu\+Agenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption})}
+
+
+
+Exibe o menu de opções relacionadas à agenda do aluno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno logado. \\
+\hline
+{\em compromissos} & Vetor de ponteiros para compromissos existentes no sistema. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_ad6b5bf80e9879891684f70d045175e60}\label{classGerenciador_ad6b5bf80e9879891684f70d045175e60} 
+\index{Gerenciador@{Gerenciador}!menuCaronas@{menuCaronas}}
+\index{menuCaronas@{menuCaronas}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{menuCaronas()}{menuCaronas()}}
+{\footnotesize\ttfamily void Gerenciador\+::menu\+Caronas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption})}
+
+
+
+Exibe o menu de operações com caronas, como inscrição, filtro, visualização. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno logado. \\
+\hline
+{\em compromissos} & Vetor de ponteiros para compromissos existentes no sistema. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_afe5f5776938bd13c71022e1f2f1a2dfd}\label{classGerenciador_afe5f5776938bd13c71022e1f2f1a2dfd} 
+\index{Gerenciador@{Gerenciador}!menuEventos@{menuEventos}}
+\index{menuEventos@{menuEventos}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{menuEventos()}{menuEventos()}}
+{\footnotesize\ttfamily void Gerenciador\+::menu\+Eventos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption})}
+
+
+
+Exibe o menu de opções relacionadas a eventos e caronas. Permite ao aluno interagir com eventos e caronas disponíveis no sistema. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno logado. \\
+\hline
+{\em compromissos} & Vetor de ponteiros para compromissos existentes no sistema. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_a71d4b5e225e99005dacf74091908b1e1}\label{classGerenciador_a71d4b5e225e99005dacf74091908b1e1} 
+\index{Gerenciador@{Gerenciador}!menuPerfil@{menuPerfil}}
+\index{menuPerfil@{menuPerfil}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{menuPerfil()}{menuPerfil()}}
+{\footnotesize\ttfamily void Gerenciador\+::menu\+Perfil (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno }\end{DoxyParamCaption})}
+
+
+
+Exibe as informações do perfil do aluno logado e permite edições. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aluno} & Ponteiro para o aluno logado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGerenciador_a63de18c2a32909ad30528421fb1f9baf}\label{classGerenciador_a63de18c2a32909ad30528421fb1f9baf} 
+\index{Gerenciador@{Gerenciador}!processarMenuPrincipal@{processarMenuPrincipal}}
+\index{processarMenuPrincipal@{processarMenuPrincipal}!Gerenciador@{Gerenciador}}
+\doxysubsubsection{\texorpdfstring{processarMenuPrincipal()}{processarMenuPrincipal()}}
+{\footnotesize\ttfamily void Gerenciador\+::processar\+Menu\+Principal (\begin{DoxyParamCaption}\item[{int}]{opcao,  }\item[{\mbox{\hyperlink{classAluno}{Aluno}} \texorpdfstring{$\ast$}{*}}]{aluno,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCompromisso}{Compromisso}} \texorpdfstring{$\ast$}{*} $>$ \&}]{compromissos }\end{DoxyParamCaption})}
+
+
+
+Processa a opção escolhida no menu principal, chamando o método correspondente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcao} & Opção escolhida pelo usuário. \\
+\hline
+{\em aluno} & Ponteiro para o aluno logado. \\
+\hline
+{\em compromissos} & Vetor de ponteiros para compromissos existentes no sistema. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{gerenciador_8hpp}{gerenciador.\+hpp}}\item 
+src/\mbox{\hyperlink{gerenciador_8cpp}{gerenciador.\+cpp}}\end{DoxyCompactItemize}

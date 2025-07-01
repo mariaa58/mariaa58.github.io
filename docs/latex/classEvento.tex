@@ -1,0 +1,204 @@
+\doxysection{Evento Class Reference}
+\hypertarget{classEvento}{}\label{classEvento}\index{Evento@{Evento}}
+
+
+Classe \doxylink{classEvento}{Evento}\+: representa um evento específico, derivada da classe \doxylink{classCompromisso}{Compromisso}. Armazena informações adicionais além do que está definido em \doxylink{classCompromisso}{Compromisso} como tipo, tema e contato do organizador. Herda de \doxylink{classCompromisso}{Compromisso} porque todo evento é também um compromisso na agenda.  
+
+
+
+
+{\ttfamily \#include $<$evento.\+hpp$>$}
+
+
+
+Inheritance diagram for Evento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classEvento__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Evento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classEvento__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEvento_ae09ee369f8ea4211186e447a08d0e29a}{Evento}} (const std\+::string \&\mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}}, int \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}}, const std\+::string \&tipo, const std\+::string \&tema, const std\+::string \&contato\+Organizador)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classEvento}{Evento}. Inicializa um evento com os parâmetros fornecidos. Todos os campos são obrigatórios. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvento_a636762fdffbf18ec2f1444e63efc7045}{exibir\+Detalhes}} () const override
+\begin{DoxyCompactList}\small\item\em Exibe os detalhes principais do evento. Sobrescreve o método virtual da classe base para incluir campos exclusivos de evento. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvento_a852c31e6f6c4549eb55f8344d989fa3a}{mostrar\+Descricao}} () const override
+\begin{DoxyCompactList}\small\item\em Exibe a descrição detalhada do evento quando o usuário solicitar informações completas de um evento específico. Sobreescreve o método virtual da classe base \doxylink{classCompromisso}{Compromisso}. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classEvento_a6fd9776ba006e7d294f12f26aa547119}{get\+Tipo}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o tipo do evento. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classEvento_a3366acfc636a139aaebc482012ddee14}{get\+Tema}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o tema do evento. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classEvento_ae05b6e56670f7ecfee2671f17ad839cd}{get\+Contato\+Organizador}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o contato do organizador do evento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classCompromisso}{Compromisso}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCompromisso_a5246207c592240bcbb4efb5325979b61}{Compromisso}} (const std\+::string \&\mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}}, const std\+::string \&\mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}}, int \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}})
+\begin{DoxyCompactList}\small\item\em Construtor do compromisso. Inicializa os campos essenciais do compromisso. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCompromisso_a3c2dd2afbc1108cd499ab6805a251345}{\texorpdfstring{$\sim$}{\string~}\+Compromisso}} ()=default
+\begin{DoxyCompactList}\small\item\em Destrutor virtual\+: permte a destruição correta ao usar ponteiros para \doxylink{classCompromisso}{Compromisso}, evitando vazamento de memória quando houver herança. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_a4ebd1743490c9774e17e121ebe56be87}{get\+Titulo}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o título do compromisso. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_a82dd35664060d9f1d72f354717da6ba7}{get\+Local}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o local do compromisso. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_abda1ea7201a8d23fdc5225c603ee90f6}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Acessa a data do compromisso. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_a309646ee8caa72658eb86e95a3192ed7}{get\+Horario}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o horário do compromisso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCompromisso_a1e054c8fc0d150d6e78ad24d5323ef6b}{get\+Vagas}} () const
+\begin{DoxyCompactList}\small\item\em Informa o número de vagas restantes. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classCompromisso_aaf86c04237ac7db6990f6c2a49da15f0}{get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Acessa o status do compromisso. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCompromisso_aebbb05cc07606730bb9cb3d9c20b6d7f}{tem\+Vaga}} () const
+\begin{DoxyCompactList}\small\item\em Verifica se ainda há vagas disponíveis para realização da inscrição. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a4fc20d26293bc09ce0d900c8e19027be}{reduzir\+Vaga}} ()
+\begin{DoxyCompactList}\small\item\em Reduz o número de vagas disponíveis em 1. Usado ao realizar uma nova inscrição. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a8fc9a6323a9556ac021c2c2b80545a8b}{liberar\+Vaga}} ()
+\begin{DoxyCompactList}\small\item\em Libera uma vaga, aumentando o número de vagas em 1. Usado ao cancelar uma inscrição. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a6db2de1ce9fcd30e66cabb0f747f3674}{set\+Status}} (const std\+::string \&novo\+Status)
+\begin{DoxyCompactList}\small\item\em Altera o status do compromisso. Só aceita valores previamente definidos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompromisso_a051afd9868d782503780f9dea7932bd7}{atualizar\+Dados}} (const std\+::string \&novo\+Local, const std\+::string \&nova\+Data, const std\+::string \&novo\+Horario, int novas\+Vagas, const std\+::string \&nova\+Descricao, const std\+::string \&novo\+Status)
+\begin{DoxyCompactList}\small\item\em Atualiza as informações principais do compromisso de uma só vez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classCompromisso}{Compromisso}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}}
+\begin{DoxyCompactList}\small\item\em Atributos básicos do compromisso. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}}
+\item 
+int \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a3f0e874f99ee127fc2e3304e56de0fcb}{descricao}}
+\item 
+std\+::string \mbox{\hyperlink{classCompromisso_a4c23dee9c572a06d465a61770f59266c}{status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{classEvento}{Evento}\+: representa um evento específico, derivada da classe \doxylink{classCompromisso}{Compromisso}. Armazena informações adicionais além do que está definido em \doxylink{classCompromisso}{Compromisso} como tipo, tema e contato do organizador. Herda de \doxylink{classCompromisso}{Compromisso} porque todo evento é também um compromisso na agenda. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEvento_ae09ee369f8ea4211186e447a08d0e29a}\label{classEvento_ae09ee369f8ea4211186e447a08d0e29a} 
+\index{Evento@{Evento}!Evento@{Evento}}
+\index{Evento@{Evento}!Evento@{Evento}}
+\doxysubsubsection{\texorpdfstring{Evento()}{Evento()}}
+{\footnotesize\ttfamily Evento\+::\+Evento (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{titulo,  }\item[{const std\+::string \&}]{local,  }\item[{const std\+::string \&}]{data,  }\item[{const std\+::string \&}]{horario,  }\item[{int}]{vagas,  }\item[{const std\+::string \&}]{tipo,  }\item[{const std\+::string \&}]{tema,  }\item[{const std\+::string \&}]{contato\+Organizador }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxylink{classEvento}{Evento}. Inicializa um evento com os parâmetros fornecidos. Todos os campos são obrigatórios. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & Nome do evento. \\
+\hline
+{\em local} & Local onde o evento será realizado. \\
+\hline
+{\em data} & Data do evento (formato AAAA-\/\+MM-\/\+DD). \\
+\hline
+{\em horario} & Horário de início do evento (formato HH\+:MM). \\
+\hline
+{\em vagas} & Número de vagas disponíveis para inscrição. \\
+\hline
+{\em tipo} & Tipo do evento. \\
+\hline
+{\em tema} & Tema central do evento. \\
+\hline
+{\em contato\+Organizador} & Contato dor organizador informações. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEvento_a636762fdffbf18ec2f1444e63efc7045}\label{classEvento_a636762fdffbf18ec2f1444e63efc7045} 
+\index{Evento@{Evento}!exibirDetalhes@{exibirDetalhes}}
+\index{exibirDetalhes@{exibirDetalhes}!Evento@{Evento}}
+\doxysubsubsection{\texorpdfstring{exibirDetalhes()}{exibirDetalhes()}}
+{\footnotesize\ttfamily void Evento\+::exibir\+Detalhes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Exibe os detalhes principais do evento. Sobrescreve o método virtual da classe base para incluir campos exclusivos de evento. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classCompromisso_a2da165f15d9eeed79c73bb85b4c32f4d}{Compromisso}}.
+
+\Hypertarget{classEvento_ae05b6e56670f7ecfee2671f17ad839cd}\label{classEvento_ae05b6e56670f7ecfee2671f17ad839cd} 
+\index{Evento@{Evento}!getContatoOrganizador@{getContatoOrganizador}}
+\index{getContatoOrganizador@{getContatoOrganizador}!Evento@{Evento}}
+\doxysubsubsection{\texorpdfstring{getContatoOrganizador()}{getContatoOrganizador()}}
+{\footnotesize\ttfamily const std\+::string \& Evento\+::get\+Contato\+Organizador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o contato do organizador do evento. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para a string com o contato. 
+\end{DoxyReturn}
+\Hypertarget{classEvento_a3366acfc636a139aaebc482012ddee14}\label{classEvento_a3366acfc636a139aaebc482012ddee14} 
+\index{Evento@{Evento}!getTema@{getTema}}
+\index{getTema@{getTema}!Evento@{Evento}}
+\doxysubsubsection{\texorpdfstring{getTema()}{getTema()}}
+{\footnotesize\ttfamily const std\+::string \& Evento\+::get\+Tema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o tema do evento. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para a string com o tema. 
+\end{DoxyReturn}
+\Hypertarget{classEvento_a6fd9776ba006e7d294f12f26aa547119}\label{classEvento_a6fd9776ba006e7d294f12f26aa547119} 
+\index{Evento@{Evento}!getTipo@{getTipo}}
+\index{getTipo@{getTipo}!Evento@{Evento}}
+\doxysubsubsection{\texorpdfstring{getTipo()}{getTipo()}}
+{\footnotesize\ttfamily const std\+::string \& Evento\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o tipo do evento. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para a string com o tipo. 
+\end{DoxyReturn}
+\Hypertarget{classEvento_a852c31e6f6c4549eb55f8344d989fa3a}\label{classEvento_a852c31e6f6c4549eb55f8344d989fa3a} 
+\index{Evento@{Evento}!mostrarDescricao@{mostrarDescricao}}
+\index{mostrarDescricao@{mostrarDescricao}!Evento@{Evento}}
+\doxysubsubsection{\texorpdfstring{mostrarDescricao()}{mostrarDescricao()}}
+{\footnotesize\ttfamily void Evento\+::mostrar\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Exibe a descrição detalhada do evento quando o usuário solicitar informações completas de um evento específico. Sobreescreve o método virtual da classe base \doxylink{classCompromisso}{Compromisso}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classCompromisso_ac6b16a57d2c8b340732c3d2b6f9bde05}{Compromisso}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{evento_8hpp}{evento.\+hpp}}\item 
+src/\mbox{\hyperlink{evento_8cpp}{evento.\+cpp}}\end{DoxyCompactItemize}

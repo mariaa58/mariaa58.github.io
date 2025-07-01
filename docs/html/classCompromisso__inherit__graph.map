@@ -1,0 +1,7 @@
+<map id="Compromisso" name="Compromisso">
+<area shape="rect" id="Node000001" title="Classe Compromisso: classe base para todos os tipos de compromissos do sistema, representando qualque..." alt="" coords="29,5,141,31"/>
+<area shape="rect" id="Node000002" href="$classCarona.html" title="Classe Carona: herda de Compromisso, já que toda carona é um compromisso na agenda,..." alt="" coords="5,79,73,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,44,49,80,44,77,68,41"/>
+<area shape="rect" id="Node000003" href="$classEvento.html" title="Classe Evento: representa um evento específico, derivada da classe Compromisso. Armazena informações ..." alt="" coords="98,79,165,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,41,126,77,122,80,98,44"/>
+</map>

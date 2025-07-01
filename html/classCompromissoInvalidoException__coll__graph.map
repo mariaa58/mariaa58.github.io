@@ -1,0 +1,5 @@
+<map id="CompromissoInvalidoException" name="CompromissoInvalidoException">
+<area shape="rect" id="Node000001" title="Exceção personalizada para erros de criação ou edição de compromissos. Também herda de std::invalid_a..." alt="" coords="5,79,233,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="37,5,201,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,44,122,79,117,79,117,44"/>
+</map>

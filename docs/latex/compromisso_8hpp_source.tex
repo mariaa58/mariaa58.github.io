@@ -1,0 +1,68 @@
+\doxysection{compromisso.\+hpp}
+\hypertarget{compromisso_8hpp_source}{}\label{compromisso_8hpp_source}\index{include/compromisso.hpp@{include/compromisso.hpp}}
+\mbox{\hyperlink{compromisso_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COMPROMISSO\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COMPROMISSO\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCompromisso}{Compromisso}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ \mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}};}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}};}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ \mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}};}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}};}
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ \mbox{\hyperlink{classCompromisso_a3f0e874f99ee127fc2e3304e56de0fcb}{descricao}};}
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ \mbox{\hyperlink{classCompromisso_a4c23dee9c572a06d465a61770f59266c}{status}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{classCompromisso}{Compromisso}}(\textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_ae833c4e3c55fbd36914eb711108ac237}{titulo}},}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_a8e64f4a81018ebd839c08cb5fafcb5b6}{local}},}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_aa66d5a15e600b047d3c844ef291b5096}{data}},}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_a3a0ef13d8365abb57c1cbd9efc414c1f}{horario}},}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCompromisso_af8aba1e43f6f0b5621239b05b224e315}{vagas}});}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classCompromisso_a3c2dd2afbc1108cd499ab6805a251345}{\string~Compromisso}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCompromisso_a2da165f15d9eeed79c73bb85b4c32f4d}{exibirDetalhes}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_a4ebd1743490c9774e17e121ebe56be87}{getTitulo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_a82dd35664060d9f1d72f354717da6ba7}{getLocal}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_abda1ea7201a8d23fdc5225c603ee90f6}{getData}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_a309646ee8caa72658eb86e95a3192ed7}{getHorario}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCompromisso_a1e054c8fc0d150d6e78ad24d5323ef6b}{getVagas}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{classCompromisso_aaf86c04237ac7db6990f6c2a49da15f0}{getStatus}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCompromisso_aebbb05cc07606730bb9cb3d9c20b6d7f}{temVaga}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCompromisso_a4fc20d26293bc09ce0d900c8e19027be}{reduzirVaga}}();}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCompromisso_a8fc9a6323a9556ac021c2c2b80545a8b}{liberarVaga}}();}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCompromisso_a6db2de1ce9fcd30e66cabb0f747f3674}{setStatus}}(\textcolor{keyword}{const}\ std::string\ \&novoStatus);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCompromisso_a051afd9868d782503780f9dea7932bd7}{atualizarDados}}(\textcolor{keyword}{const}\ std::string\ \&novoLocal,}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&novaData,}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&novoHorario,}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ novasVagas,}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&novaDescricao,}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&novoStatus);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCompromisso_ac6b16a57d2c8b340732c3d2b6f9bde05}{mostrarDescricao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00157\ \};}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

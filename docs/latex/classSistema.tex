@@ -1,0 +1,84 @@
+\doxysection{Sistema Class Reference}
+\hypertarget{classSistema}{}\label{classSistema}\index{Sistema@{Sistema}}
+
+
+{\ttfamily \#include $<$sistema.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSistema_a08346c127b05cc90e47c2210c20dd4cd}{Sistema}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSistema_aafc86e0f2c3d734fb4c0985f70c27a1a}{\texorpdfstring{$\sim$}{\string~}\+Sistema}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor do sistema\+: libera a memória alocada para alunos e compromissos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_a515a83edd2e4316db384ffc5b1daff19}{carregar\+Dados}} ()
+\begin{DoxyCompactList}\small\item\em Obtem os dados de compromissos a partir de arquivo externo (eventos.\+txt). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_afa636efe07efe2d364e19a18f94d6d27}{criar\+Conta}} ()
+\begin{DoxyCompactList}\small\item\em Responsável pelo fluxo de criação de uma nova conta de aluno\+: pede as informações necessárias, valida os dade e adiciona o novo aluno ao sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_a5afc2279acc800dc7386e74e75477a33}{iniciar}} ()
+\begin{DoxyCompactList}\small\item\em Inicia o sistema\+: executa o menu inicial, gerencia login, etc. Mantém o programa em execução enquanto o usuário desejar, ou seja, esnquanto não escolher a opção de sair. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{classSistema}{Sistema}\+: responsável por gerenciar o fluxo principal do programa e centraliza as principais operações do sistema. Encaminha parte da navegação/lógica para classe \doxylink{classGerenciador}{Gerenciador}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSistema_a08346c127b05cc90e47c2210c20dd4cd}\label{classSistema_a08346c127b05cc90e47c2210c20dd4cd} 
+\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{Sistema()}{Sistema()}}
+{\footnotesize\ttfamily Sistema\+::\+Sistema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão. 
+
+\Hypertarget{classSistema_aafc86e0f2c3d734fb4c0985f70c27a1a}\label{classSistema_aafc86e0f2c3d734fb4c0985f70c27a1a} 
+\index{Sistema@{Sistema}!````~Sistema@{\texorpdfstring{$\sim$}{\string~}Sistema}}
+\index{````~Sistema@{\texorpdfstring{$\sim$}{\string~}Sistema}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sistema()}{\string~Sistema()}}
+{\footnotesize\ttfamily Sistema\+::\texorpdfstring{$\sim$}{\string~}\+Sistema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destrutor do sistema\+: libera a memória alocada para alunos e compromissos. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSistema_a515a83edd2e4316db384ffc5b1daff19}\label{classSistema_a515a83edd2e4316db384ffc5b1daff19} 
+\index{Sistema@{Sistema}!carregarDados@{carregarDados}}
+\index{carregarDados@{carregarDados}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{carregarDados()}{carregarDados()}}
+{\footnotesize\ttfamily void Sistema\+::carregar\+Dados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtem os dados de compromissos a partir de arquivo externo (eventos.\+txt). 
+
+\Hypertarget{classSistema_afa636efe07efe2d364e19a18f94d6d27}\label{classSistema_afa636efe07efe2d364e19a18f94d6d27} 
+\index{Sistema@{Sistema}!criarConta@{criarConta}}
+\index{criarConta@{criarConta}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{criarConta()}{criarConta()}}
+{\footnotesize\ttfamily void Sistema\+::criar\+Conta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Responsável pelo fluxo de criação de uma nova conta de aluno\+: pede as informações necessárias, valida os dade e adiciona o novo aluno ao sistema. 
+
+\Hypertarget{classSistema_a5afc2279acc800dc7386e74e75477a33}\label{classSistema_a5afc2279acc800dc7386e74e75477a33} 
+\index{Sistema@{Sistema}!iniciar@{iniciar}}
+\index{iniciar@{iniciar}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{iniciar()}{iniciar()}}
+{\footnotesize\ttfamily void Sistema\+::iniciar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicia o sistema\+: executa o menu inicial, gerencia login, etc. Mantém o programa em execução enquanto o usuário desejar, ou seja, esnquanto não escolher a opção de sair. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{sistema_8hpp}{sistema.\+hpp}}\item 
+src/\mbox{\hyperlink{sistema_8cpp}{sistema.\+cpp}}\end{DoxyCompactItemize}
