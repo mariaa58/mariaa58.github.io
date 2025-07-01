@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,169,56"/>
-<area shape="rect" id="Node000001" href="$classCompromissoInvalidoException.html" title="Exceção personalizada para erros de criação ou edição de compromissos. Também herda de std::invalid_a..." alt="" coords="217,5,445,31"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="183,31,217,27,217,32,183,36"/>
-<area shape="rect" id="Node000002" href="$classEventoInvalidoException.html" title="Exceção personalizada para casos de erro na criação/validação de eventos. Herda de std::invalid_argum..." alt="" coords="240,55,423,80"/>
-<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="183,50,240,56,240,61,183,55"/>
-</map>
